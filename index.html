@@ -1,0 +1,1394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>For My Bba ❤️</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+
+            font-family: "Segoe UI", sans-serif;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffdde1,
+                    #ee9ca7
+                );
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            overflow: hidden;
+
+            color: #5a1830;
+        }
+
+
+        /* =========================
+           MAIN CONTAINER
+           ========================= */
+
+        .container {
+
+            width: 92%;
+
+            max-width: 520px;
+
+            max-height: 92vh;
+
+            overflow-y: auto;
+
+            text-align: center;
+
+            background: rgba(
+                255,
+                255,
+                255,
+                0.94
+            );
+
+            padding: 35px 25px;
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 15px 40px
+                rgba(0,0,0,0.18);
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        /* Hide scrollbar */
+
+        .container::-webkit-scrollbar {
+            width: 0;
+        }
+
+
+        /* =========================
+           HEART
+           ========================= */
+
+        .heart {
+
+            font-size: 65px;
+
+            animation:
+                beat 1s infinite;
+        }
+
+
+        @keyframes beat {
+
+            50% {
+                transform: scale(1.15);
+            }
+
+        }
+
+
+        /* =========================
+           HEADINGS
+           ========================= */
+
+        h1 {
+
+            margin: 15px 0;
+
+            font-size: 32px;
+        }
+
+
+        p {
+
+            font-size: 18px;
+
+            line-height: 1.7;
+
+            margin: 15px 0;
+        }
+
+
+        /* =========================
+           BUTTON
+           ========================= */
+
+        button {
+
+            border: none;
+
+            background: #ff4f81;
+
+            color: white;
+
+            padding: 14px 25px;
+
+            border-radius: 30px;
+
+            font-size: 16px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+
+            box-shadow:
+                0 5px 15px
+                rgba(255,79,129,0.4);
+        }
+
+
+        button:hover {
+
+            transform: scale(1.06);
+
+            background: #e83e70;
+        }
+
+
+        /* =========================
+           START BUTTON
+           ========================= */
+
+        .start-button {
+
+            margin-top: 20px;
+
+            padding: 15px 30px;
+
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           PAGE
+           ========================= */
+
+        .page {
+
+            display: none;
+        }
+
+
+        .page.active {
+
+            display: block;
+
+            animation:
+                fade 0.8s ease;
+        }
+
+
+        @keyframes fade {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(20px);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+
+        }
+
+
+        /* =========================
+           MAIN COUPLE PHOTO
+           ========================= */
+
+        .main-photo {
+
+            width: 100%;
+
+            height: auto;
+
+            max-height: 500px;
+
+            object-fit: contain;
+
+            display: block;
+
+            border-radius: 22px;
+
+            margin: 20px auto 0;
+
+            border: 5px solid white;
+
+            box-shadow:
+                0 10px 25px
+                rgba(0,0,0,0.18);
+        }
+
+
+        /* =========================
+           MEMORY PHOTO
+           ========================= */
+
+        .memory-photo {
+
+            width: 100%;
+
+            height: auto;
+
+            max-height: 450px;
+
+            object-fit: contain;
+
+            display: block;
+
+            border-radius: 20px;
+
+            margin: 15px auto 0;
+
+            border: 4px solid white;
+
+            box-shadow:
+                0 8px 20px
+                rgba(0,0,0,0.15);
+        }
+
+
+        /* =========================
+           REASONS
+           ========================= */
+
+        .reasons {
+
+            text-align: left;
+
+            margin-top: 20px;
+        }
+
+
+        .reason {
+
+            background: #fff0f4;
+
+            padding: 14px 15px;
+
+            margin: 10px 0;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 3px 10px
+                rgba(0,0,0,0.05);
+        }
+
+
+        /* =========================
+           NAVIGATION
+           ========================= */
+
+        .navigation {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 12px;
+
+            margin-top: 25px;
+        }
+
+
+        .navigation button {
+
+            flex: 1;
+
+            padding: 13px 10px;
+
+            font-size: 15px;
+        }
+
+
+        .back-button {
+
+            background: #fff0f4;
+
+            color: #ff4f81;
+
+            box-shadow:
+                0 4px 12px
+                rgba(255,79,129,0.15);
+        }
+
+
+        .back-button:hover {
+
+            background: #ffe0e9;
+        }
+
+
+        /* =========================
+           FINAL MESSAGE
+           ========================= */
+
+        .final {
+
+            font-size: 25px;
+
+            font-weight: bold;
+
+            margin-top: 25px;
+        }
+
+
+        /* =========================
+           FAVORITE GIRL QUESTION
+           ========================= */
+
+        .favorite-question {
+
+            margin-top: 30px;
+
+            padding: 22px;
+
+            background: #fff0f4;
+
+            border-radius: 22px;
+
+            box-shadow:
+                0 5px 15px
+                rgba(255,79,129,0.12);
+        }
+
+
+        .favorite-question h2 {
+
+            font-size: 21px;
+
+            margin-bottom: 20px;
+
+            line-height: 1.5;
+        }
+
+
+        .yes-no-buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+        }
+
+
+        .yes-button,
+        .no-button {
+
+            width: 110px;
+
+            padding: 12px 15px;
+
+            margin: 0;
+
+            font-size: 16px;
+        }
+
+
+        .yes-button {
+
+            background: #ff4f81;
+        }
+
+
+        .no-button {
+
+            background: #d9d9d9;
+
+            color: #555;
+
+            box-shadow:
+                0 4px 10px
+                rgba(0,0,0,0.08);
+        }
+
+
+        .answer-message {
+
+            margin-top: 20px;
+
+            font-size: 18px;
+
+            line-height: 1.7;
+
+            font-weight: bold;
+
+            color: #ff4f81;
+
+            animation:
+                romanticFade 1s ease;
+        }
+
+
+        @keyframes romanticFade {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    scale(0.8);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    scale(1);
+            }
+
+        }
+
+
+        /* =========================
+           MUSIC BUTTON
+           ========================= */
+
+        .music-button {
+
+            position: fixed;
+
+            right: 20px;
+
+            bottom: 20px;
+
+            width: 55px;
+
+            height: 55px;
+
+            border-radius: 50%;
+
+            padding: 0;
+
+            margin: 0;
+
+            font-size: 22px;
+
+            z-index: 10;
+        }
+
+
+        /* =========================
+           FLOATING HEARTS
+           ========================= */
+
+        .floating-heart {
+
+            position: fixed;
+
+            bottom: -20px;
+
+            font-size: 25px;
+
+            animation:
+                float 5s linear forwards;
+
+            z-index: 1;
+
+            pointer-events: none;
+        }
+
+
+        @keyframes float {
+
+            0% {
+
+                transform:
+                    translateY(0);
+
+                opacity: 1;
+            }
+
+            100% {
+
+                transform:
+                    translateY(-110vh);
+
+                opacity: 0;
+            }
+
+        }
+
+
+        /* =========================
+           MOBILE
+           ========================= */
+
+        @media (max-width: 600px) {
+
+            .container {
+
+                padding:
+                    30px 20px;
+
+                max-height: 94vh;
+            }
+
+
+            h1 {
+
+                font-size: 28px;
+            }
+
+
+            p {
+
+                font-size: 16px;
+            }
+
+
+            .main-photo {
+
+                max-height: 450px;
+            }
+
+
+            .memory-photo {
+
+                max-height: 400px;
+            }
+
+
+            .navigation button {
+
+                font-size: 14px;
+
+                padding: 12px 8px;
+            }
+
+
+            .favorite-question h2 {
+
+                font-size: 19px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     MUSIC
+     ========================= -->
+
+<audio id="bgMusic" loop>
+
+    <source
+            src="music.mp3"
+            type="audio/mpeg">
+
+</audio>
+
+
+<!-- MUSIC BUTTON -->
+
+<button
+        class="music-button"
+        id="musicButton"
+        onclick="toggleMusic()">
+
+    🎵
+
+</button>
+
+
+
+<!-- =========================
+     MAIN CONTAINER
+     ========================= -->
+
+<div class="container">
+
+
+    <!-- =================
+         PAGE 1
+         ================= -->
+
+    <div
+            class="page active"
+            id="page1">
+
+        <div class="heart">
+            💌
+        </div>
+
+
+        <h1>
+            Hey You... 🥹❤️
+        </h1>
+
+
+        <p>
+
+            I have a little surprise
+            <br>
+
+            specially made for you...
+
+        </p>
+
+
+        <button
+                class="start-button"
+                onclick="nextPage(2)">
+
+            Open My Surprise ❤️
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =================
+         PAGE 2
+         ================= -->
+
+    <div
+            class="page"
+            id="page2">
+
+        <div class="heart">
+            ❤️
+        </div>
+
+
+        <h1>
+
+            Happy National
+            Boyfriend Day! 🥹
+
+        </h1>
+
+
+        <p>
+
+            To my favourite person... ❤️
+
+        </p>
+
+
+        <!-- COUPLE PHOTO -->
+
+        <img
+                src="couple.jpg"
+                alt="Our Couple Photo"
+                class="main-photo">
+
+
+        <p>
+
+            Bba, this little surprise
+            is just for you. 🥹❤️
+
+        </p>
+
+
+        <p>
+
+            Sometimes I may not know
+            how to say everything I feel,
+
+            <br>
+
+            <b>
+                but you are one of the
+                most special people in my life.
+            </b>
+
+        </p>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="navigation">
+
+            <button
+                    class="back-button"
+                    onclick="previousPage(1)">
+
+                ← Back
+
+            </button>
+
+
+            <button
+                    onclick="nextPage(3)">
+
+                Next → 💕
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================
+         PAGE 3
+         ================= -->
+
+    <div
+            class="page"
+            id="page3">
+
+        <div class="heart">
+            🌹
+        </div>
+
+
+        <h1>
+
+            Reasons I Love You ❤️
+
+        </h1>
+
+
+        <div class="reasons">
+
+
+            <div class="reason">
+
+                🥰
+
+                <b>
+                    Your Smile
+                </b>
+
+                <br>
+
+                Your smile can make
+                even my worst day better.
+
+            </div>
+
+
+            <div class="reason">
+
+                🫶
+
+                <b>
+                    Your Care
+                </b>
+
+                <br>
+
+                The way you care about me
+                makes me feel truly special.
+
+            </div>
+
+
+            <div class="reason">
+
+                💕
+
+                <b>
+                    Your Little Things
+                </b>
+
+                <br>
+
+                I love all the little things
+                you do without even realizing it.
+
+            </div>
+
+
+            <div class="reason">
+
+                😂
+
+                <b>
+                    Your Madness
+                </b>
+
+                <br>
+
+                You somehow make even
+                the most ordinary days fun.
+
+            </div>
+
+
+            <div class="reason">
+
+                ❤️
+
+                <b>
+                    Simply You
+                </b>
+
+                <br>
+
+                I don't need a reason.
+                I just love you for being you.
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="navigation">
+
+            <button
+                    class="back-button"
+                    onclick="previousPage(2)">
+
+                ← Back
+
+            </button>
+
+
+            <button
+                    onclick="nextPage(4)">
+
+                Next → 📸
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================
+         PAGE 4
+         ================= -->
+
+    <div
+            class="page"
+            id="page4">
+
+        <div class="heart">
+            📸❤️
+        </div>
+
+
+        <h1>
+
+            Our Little Memory 🥹
+
+        </h1>
+
+
+        <!-- CAR PHOTO -->
+
+        <img
+                src="car.jpg"
+                alt="Our Memory"
+                class="memory-photo">
+
+
+        <p>
+
+            Just a little moment...
+
+            <br>
+
+            but a memory I want
+            to keep forever. ❤️
+
+        </p>
+
+
+        <p>
+
+            It may not have been
+            the most perfect day,
+
+            <br>
+
+            <b>
+                but every little moment
+                with you is special to me. 🥹❤️
+            </b>
+
+        </p>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="navigation">
+
+            <button
+                    class="back-button"
+                    onclick="previousPage(3)">
+
+                ← Back
+
+            </button>
+
+
+            <button
+                    onclick="nextPage(5)">
+
+                Next → 💌
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================
+         PAGE 5
+         ================= -->
+
+    <div
+            class="page"
+            id="page5">
+
+
+        <div class="heart">
+            💖
+        </div>
+
+
+        <h1>
+            My Final Message
+        </h1>
+
+
+        <p>
+
+            No matter how many
+            people I meet,
+
+            <br>
+
+            <b>
+                I'd still choose you.
+            </b>
+
+        </p>
+
+
+        <p>
+
+            In every version
+            of my life,
+
+            <br>
+
+            I hope I get to
+            find you again. 🥹❤️
+
+        </p>
+
+
+        <div class="final">
+
+            I Love You, Bba ❤️
+
+        </div>
+
+
+        <p>
+
+            Happy National
+            Boyfriend Day,
+            My Love! 🫶
+
+        </p>
+
+
+        <!-- SEND LOVE BUTTON -->
+
+        <button
+                onclick="createHearts()">
+
+            Send Some Love 💕
+
+        </button>
+
+
+        <!-- BACK BUTTON -->
+
+        <div class="navigation">
+
+            <button
+                    class="back-button"
+                    onclick="previousPage(4)">
+
+                ← Back
+
+            </button>
+
+        </div>
+
+
+        <!-- FAVORITE GIRL QUESTION -->
+
+        <div class="favorite-question">
+
+            <h2>
+
+                I'm your favourite girl,
+                right? 🥹❤️
+
+            </h2>
+
+
+            <div class="yes-no-buttons">
+
+
+                <button
+                        class="yes-button"
+                        onclick="yesAnswer()">
+
+                    YES ❤️
+
+                </button>
+
+
+                <button
+                        class="no-button"
+                        onclick="noAnswer()">
+
+                    NO 😐
+
+                </button>
+
+
+            </div>
+
+
+            <p
+                    id="answerMessage"
+                    class="answer-message">
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+     ========================= -->
+
+<script>
+
+
+    /* =========================
+       NEXT PAGE
+       ========================= */
+
+    function nextPage(pageNumber) {
+
+        document
+            .querySelectorAll(".page")
+            .forEach(page => {
+
+                page.classList.remove("active");
+
+            });
+
+
+        document
+            .getElementById(
+                "page" + pageNumber
+            )
+            .classList.add("active");
+
+
+        createHearts();
+
+
+        /* START MUSIC */
+
+        const music =
+            document.getElementById("bgMusic");
+
+
+        music.play()
+            .then(() => {
+
+                document
+                    .getElementById("musicButton")
+                    .innerHTML = "🎵";
+
+            })
+            .catch(() => {
+
+                console.log(
+                    "Music waiting for user interaction."
+                );
+
+            });
+
+    }
+
+
+
+    /* =========================
+       PREVIOUS PAGE
+       ========================= */
+
+    function previousPage(pageNumber) {
+
+        document
+            .querySelectorAll(".page")
+            .forEach(page => {
+
+                page.classList.remove("active");
+
+            });
+
+
+        document
+            .getElementById(
+                "page" + pageNumber
+            )
+            .classList.add("active");
+
+    }
+
+
+
+    /* =========================
+       MUSIC ON / OFF
+       ========================= */
+
+    function toggleMusic() {
+
+        const music =
+            document.getElementById("bgMusic");
+
+
+        const button =
+            document.getElementById("musicButton");
+
+
+        if (music.paused) {
+
+            music.play();
+
+            button.innerHTML = "🎵";
+
+        }
+
+        else {
+
+            music.pause();
+
+            button.innerHTML = "🔇";
+
+        }
+
+    }
+
+
+
+    /* =========================
+       FLOATING HEARTS
+       ========================= */
+
+    function createHearts() {
+
+        for (
+            let i = 0;
+            i < 18;
+            i++
+        ) {
+
+
+            const heart =
+                document.createElement("div");
+
+
+            heart.classList.add(
+                "floating-heart"
+            );
+
+
+            const hearts = [
+
+                "❤️",
+                "💕",
+                "💖",
+                "💗",
+                "💘",
+                "💝"
+
+            ];
+
+
+            heart.innerHTML =
+                hearts[
+                    Math.floor(
+                        Math.random()
+                        * hearts.length
+                    )
+                ];
+
+
+            heart.style.left =
+                Math.random() * 100
+                + "vw";
+
+
+            heart.style.animationDuration =
+                (3 + Math.random() * 3)
+                + "s";
+
+
+            document.body.appendChild(
+                heart
+            );
+
+
+            setTimeout(() => {
+
+                heart.remove();
+
+            }, 6000);
+
+        }
+
+    }
+
+
+
+    /* =========================
+       YES ANSWER
+       ========================= */
+
+    function yesAnswer() {
+
+        document.getElementById(
+            "answerMessage"
+        ).innerHTML = `
+
+            You said YES... 🥹❤️
+
+            <br><br>
+
+            Then it's official... 💍💕
+
+            <br>
+
+            I'm forever your girl,
+            and you're forever
+            my favourite person. 🫶
+
+            <br><br>
+
+            I love you more
+            than words can say. ❤️
+
+        `;
+
+
+        createHearts();
+
+
+        /* EXTRA HEARTS */
+
+        setTimeout(() => {
+
+            createHearts();
+
+        }, 1000);
+
+
+        setTimeout(() => {
+
+            createHearts();
+
+        }, 2000);
+
+    }
+
+
+
+    /* =========================
+       NO BUTTON
+       ========================= */
+
+    function noAnswer() {
+
+        const noButton =
+            document.querySelector(".no-button");
+
+
+        noButton.innerHTML =
+            "YES ❤️";
+
+
+        noButton.classList.remove(
+            "no-button"
+        );
+
+
+        noButton.classList.add(
+            "yes-button"
+        );
+
+
+        noButton.onclick =
+            yesAnswer;
+
+    }
+
+
+</script>
+
+
+</body>
+
+</html>
